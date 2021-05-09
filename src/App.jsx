@@ -1,5 +1,7 @@
-// write your full component here from scratch
+import React from 'react'
 
-export default function () {
-	return null
+function App() {
+	return <div id="app">Hello World</div>
 }
+
+export default App
