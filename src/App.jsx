@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function App() {
 	// make changes
-	const counter = 0
+	const [counter, setCounter] = useState(0)
 
 	return (
 		<div>
 			<h1>{counter}</h1>
 			<div>
-				<button id="increment">Increment</button>
-				<button id="decrement">Decrement</button>
+				<button onClick={() => setCounter((c) => c + 1)} id="increment">
+					Increment
+				</button>
+				<button id="decrement" onClick={() => setCounter((c) => c - 1)}>
+					Decrement
+				</button>
 			</div>
 		</div>
 	)
